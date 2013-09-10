@@ -91,7 +91,7 @@ public class MainActivity extends ActionBarActivity {
             ids[i] = Integer.toString(i+1);
         }
         // set up the drawer's list view with items using a custom adapter and click listener
-        MenuAdapter adapter = new MenuAdapter(this,R.layout.drawer_list_item, ids);
+        MenuAdapter adapter = new MenuAdapter(this,ids);
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
         
